@@ -36,18 +36,25 @@ margin-top: 2.5vh;
     overflow-y: auto;
     justify-content: space-around;
     padding-left: 0vw;
+    border: solid 2px rgb(rgb(72, 43, 203));
     }
     .thumbnails-item {
+        border-radius: 25%;
     width: 20vw;
     height: 20vw;
     margin-top: 2.5vh;
     border: solid 1px black;
     }
     .thumbnails-image {
+        display: block;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
     width: 20vw;
     height: 15vw;
     }
     .thumbnails-title {
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
         display: block; 
         text-align: center;
 height: 5vw;
