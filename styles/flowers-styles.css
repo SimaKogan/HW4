@@ -37,13 +37,16 @@ margin-top: 2.5vh;
     justify-content: space-around;
     padding-left: 0vw;
     border: solid 2px rgb(rgb(72, 43, 203));
+    list-style-position: inside ;
     }
     .thumbnails-item {
+        overflow-y: hidden;
         border-radius: 25%;
     width: 20vw;
     height: 20vw;
     margin-top: 2.5vh;
     border: solid 1px black;
+    border-radius: 25%;
     }
     .thumbnails-image {
         display: block;
@@ -58,7 +61,8 @@ margin-top: 2.5vh;
         display: block; 
         text-align: center;
 height: 5vw;
-background-color: coral;
+background-color: rgb(229, 101, 46);
+
     }
     .thumbnails-anchor {
        text-decoration: none;
