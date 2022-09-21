@@ -50,14 +50,10 @@ margin-top: 2.5vh;
     }
     .thumbnails-image {
         display: block;
-        border-top-left-radius: 25%;
-        border-top-right-radius: 25%;
     width: 20vw;
     height: 15vw;
     }
     .thumbnails-title {
-        border-bottom-left-radius: 25%;
-        border-bottom-right-radius: 25%;
         display: block; 
         text-align: center;
 height: 5vw;
