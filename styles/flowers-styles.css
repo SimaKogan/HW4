@@ -105,6 +105,7 @@ color: white;
             max-height: 80vh;
             order: -1;
             justify-content: flex-start;
+            width: 17em;
         }
         .thumbnails-title {
             font-size: 1em;
