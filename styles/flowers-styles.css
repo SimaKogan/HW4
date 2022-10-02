@@ -1,7 +1,7 @@
 @font-face {
     font-family: lakeshore;
-    src: url(fonts/Airstream-webfont.svg);
-    src: url(fonts/Airstream-webfont.woff);
+    src: url(fonts/LAKESHOR-webfont.svg);
+    src: url(fonts/LAKESHOR-webfont.woff);
 }
 @font-face {
     font-family: airstream;
@@ -13,7 +13,8 @@
     --thumbnails-img-height: 15vw;
     --thumbnails-title-height: calc(var(--thumbnails-img-height) * 0.33)
 }
-body, html {
+body, 
+html {
     height: 100%;
 }
 body{
@@ -21,7 +22,7 @@ display: flex;
 flex-direction: column;
 background-color: bisque;
 margin: 0%;
-overflow: hidden;
+
 }
 
 .logo  {
@@ -48,13 +49,22 @@ align-items: center;
 margin-top: 10vh;
 
     }
+    .details-frame {
+        position: relative;
+    }
     .details-image {
-    width: 70vw;
-    height: 60vw;
+    width: 90vw;
+    height: 70vw;
     border-radius: 25%;
     }
     .details-title {
     display: block;
+    font-family: airstream;
+    font-style: italic;
+    background-color: beige;
+    position: absolute;
+    left: 0vw;
+    bottom: 8vw;
     }
     .thumbnails-list {
     list-style: none;
@@ -65,11 +75,9 @@ margin-top: 10vh;
     overflow-y: auto;
     justify-content: space-around;
     padding-left: 0vw;
-    border: solid 2px rgb(rgb(72, 43, 203));
-    list-style-position: inside ;
     }
     .thumbnails-item {
-        overflow-y: hidden;
+        overflow: hidden;
         border-radius: 25%;
     max-width: var(--thumbnails-img-width);
     min-height: calc(var(--thumbnails-img-height) + var(--thumbnails-title-height));
@@ -94,21 +102,27 @@ color: white;
     .thumbnails-anchor {
        text-decoration: none;
     }
+
+    .thumbnails-item:hover {
+        transform: scale(1.1);
+        margin-left: 1vw;
+    }
     @media (min-width: 560px) {
         :root {
-            --thumbnails-image-width: 15vw;
-            --thumbnails-image-height: 7vw;
+            --thumbnails-image-width: 12vw;
+            --thumbnails-image-height: 8vw;
+            --thumbnails-title-height: calc(var(--thumbnails-img-height)* 0.25)
+        }
+        .logo {
+            font-size: 1.8em;
         }
         .thumbnails-list {
             flex-direction: column;
             flex-wrap: nowrap;
-            max-height: 80vh;
+            max-height: 75vh;
             order: -1;
             justify-content: flex-start;
             width: 17em;
-        }
-        .thumbnails-title {
-            font-size: 1em;
         }
         .main-class{
             display: flex;
@@ -116,29 +130,37 @@ color: white;
             justify-content: space-around;
         }
         .details-image{
-            width: 50vw;
-            height: 40vw;
+            width: 45vw;
+            height: 38vw;
         }
         .details-title {
             color: brown;
-            font-size: 1.5em;
+            font-size: 3em;
         }
         .details-container {
             justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
         }
-    }
+    
     @media (min-width: 900px) {
         .details-container {
-            justify-content: center;
-            padding-bottom: 10vh;
+            margin-top: 5vh;
+            margin-right: 5vw;
         }
         .thumbnails-list {
             width: 17em;
-        }
-        .thumbnails-item {
-            border: solid white 2px;
+            padding-right: 2vw;
+            margin-top: 2.5vh;
+            max-height: 86vh;
         }
         .thumbnails-title {
-            font-size: 1em;
+            font-size: 1.5em;
+        }
+        .details-image {
+            width: 45vw;
+            height: 35vw;
         }
     }
+
+    }    
