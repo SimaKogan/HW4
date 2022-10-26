@@ -13,8 +13,6 @@ function setDetails(anchor) {
     detailsAudio.setAttribute('src', anchor.getAttribute('data-details-audio'));
     detailsTitle.innerHTML = anchor.getAttribute('data-details-title');
 }
-
-
 for(let i = 0; i<anchors.length; i++) {
     anchors[i].addEventListener("click", function() {
         console.log("event - click on", anchors[i]);
@@ -25,7 +23,6 @@ for(let i = 0; i<anchors.length; i++) {
 button = button.addEventListener("click", function() {
     hideDetails();
 })
-
 function showDetails () {
     mainClass.classList.remove(HIDDEN);
     detailsContainer.classList.add(IS_POINT);
@@ -38,7 +35,6 @@ function showDetails () {
     }, 15000)
 
 }
-
 function hideDetails() {
     mainClass.classList.add(HIDDEN);
 }
